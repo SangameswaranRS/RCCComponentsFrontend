@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/headerRl3"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:drawableLeft="@drawable/spanner_icon"
+            android:text="My Components"
+            android:textSize="25dp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerRl3"
+        android:id="@+id/RvViewInventory"
+        android:layout_above="@+id/btnAddItem">
+    </android.support.v7.widget.RecyclerView>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/viewInventoryLoader"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/btnAddItem"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD ITEM"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

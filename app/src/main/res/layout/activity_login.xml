@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.wrapp.floatlabelededittext.FloatLabeledEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/flt1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_above="@+id/flt2"
+        android:layout_marginBottom="8dp">
+        <EditText
+            android:fontFamily="sans-serif"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLines="1"
+            android:inputType="textPersonName"
+            android:hint="Enter your Username"
+            android:id="@+id/etLoginUserName"
+            />
+    </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+    <com.wrapp.floatlabelededittext.FloatLabeledEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/flt2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_centerInParent="true"
+        >
+        <EditText
+            android:fontFamily="sans-serif"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:id="@+id/etLoginPassword"/>
+    </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+    <Button
+        android:fontFamily="sans-serif"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="LOGIN"
+        android:id="@+id/btnLogin"
+        android:layout_below="@+id/flt2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cardview_shadow_end_color"
+        android:textColor="#000"
+        android:id="@+id/copyRightLogin"
+        android:text="\u00A9 Innovations and Tech, Robo club of CEG."
+        android:textAlignment="center"
+        android:paddingBottom="7dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"
+        android:text="Components"
+        android:textSize="35dp"
+        android:id="@+id/primTv"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensedserif"
+        android:layout_marginTop="60dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Robo Club of CEG"
+        android:textAlignment="center"
+        android:textColor="#64a844"
+        android:layout_below="@+id/primTv"
+        android:layout_marginTop="5dp"/>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/loginProgress"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New User? Sign Up here"
+        android:id="@+id/signupEt"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/copyRightLogin"/>
+
+</RelativeLayout>
